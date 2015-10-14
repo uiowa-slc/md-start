@@ -1,0 +1,16 @@
+header{
+	background: rgba(#111, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	//padding: $column-gutter 0;
+	@media #{$medium-up}{
+		line-height: 175px;
+		height: 175px;
+	}
+	.logo-container{
+		img{
+			max-width: 350px;
+		}
+	}
+
+}
