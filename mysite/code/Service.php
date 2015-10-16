@@ -2,9 +2,8 @@
 class Service extends DataObject {
 
 	private static $db = array(
-		'Title' => 'Text',
-		'Content' => 'HTMLText', 
-		'SortOrder' => 'Int',
+		'Title'   => 'Text',
+		'Content' => 'HTMLText',
 
 	);
 
@@ -12,6 +11,8 @@ class Service extends DataObject {
 		'Categories' => 'Category',
 	);
 
+	public function updateCMSFields(FieldList $fields) {
+		$fields->removeByName('SortOrder');
 
+	}
 }
-

@@ -6,7 +6,25 @@ class Page extends SiteTree {
 
 	private static $has_one = array(
 	);
+	private static $many_many = array(
+		'Categories' => 'Category',
+	);
 
+	private static $many_many_extraFields = array(
+		'Categories' => array(
+			'SortOrder' => 'Int',
+		)
+	);
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$conf = GridFieldConfig_RelationEditor::create(10);
+		$conf->addComponent(new GridFieldSortableRows('SortOrder'));
+
+		$fields->addFieldToTab('Root.Main', new GridField('Categories', 'Categories', $this->Categories(), $conf));
+
+		return $fields;
+	}
 }
 class Page_Controller extends ContentController {
 
@@ -25,7 +43,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
 	public function init() {

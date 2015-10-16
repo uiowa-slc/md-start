@@ -4,29 +4,11 @@ class HomePage extends Page {
 	private static $db = array(
 	);
 
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
 
-	private static $many_many = array (
-		'Categories' => 'Category',
-	);
-
-
-    private static $many_many_extraFields=array(
-        'Categories'=>array(
-            'SortOrder'=>'Int'
-        )
-    );
-
-    public function getCMSFields() {
-        $fields=parent::getCMSFields();
-
-        $conf=GridFieldConfig_RelationEditor::create(10);
-        $conf->addComponent(new GridFieldSortableRows('SortOrder'));
-
-        $fields->addFieldToTab('Root.Categories', new GridField('Categories', 'Categories', $this->Categories(), $conf));
-
-        return $fields;
-    }
-
+		return $fields;
+	}
 
 }
 
@@ -47,7 +29,7 @@ class HomePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
 	public function init() {
@@ -57,4 +39,3 @@ class HomePage_Controller extends Page_Controller {
 	}
 
 }
-
