@@ -3,11 +3,13 @@ class Category extends DataObject {
 
 	private static $db = array(
 		'Title' => 'Text',
+		
 
 	);
 
 	private static $many_many = array(
 		'Services' => 'Service',
+
 	);
 
 	private static $many_many_extraFields = array(
