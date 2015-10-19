@@ -1,13 +1,13 @@
-// <?php
+<?php
 
-// class CategoryAdmin extends ModelAdmin {
+class CategoryAdmin extends ModelAdmin {
 
-// 	private static $menu_title = 'Categories';
+	private static $menu_title = 'Categories';
 
-// 	private static $url_segment= 'categories';
+	private static $url_segment= 'categories';
 
-// 	private static $managed_models = array (
-// 		'Category',
-// 		);
+	private static $managed_models = array (
+		'Category',
+		);
 
-// }
+}
