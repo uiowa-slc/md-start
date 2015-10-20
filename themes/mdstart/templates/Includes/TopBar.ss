@@ -3,14 +3,13 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="left">
-        <li class="active"><a href="#">Right Button Active</a></li>
-        <li class="has-dropdown">
-          <a href="#">Right Button Dropdown</a>
-          <ul class="dropdown">
-            <li><a href="#">First link in dropdown</a></li>
-            <li class="active"><a href="#">Active link in dropdown</a></li>
-          </ul>
-        </li>
+        <li class="active show-for-medium-up"><a href="#" target="_blank">Launch OTIS</a></li>
+        <% loop Categories %>
+          <% loop $Services %>
+            <li><a href="$Link" target="_blank">$Title</a></li>
+          <% end_loop %>
+
+        <% end_loop %>
       </ul>
     </section>
   </nav>
