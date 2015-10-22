@@ -7265,6 +7265,87 @@ header .logo-container img {
   padding: 2.5rem 0;
   max-width: 350px; }
 
+/*-------------------------------------------
+    Media Queries
+-------------------------------------------*/
+.footer {
+  background: #222;
+  border-top: 8px solid #000;
+  -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
+  -moz-box-shadow: inset 0 1px 0 #2e2e2e;
+  box-shadow: inset 0 1px 0 #2e2e2e;
+  color: #eee;
+  padding: 3em 0 1em;
+  position: relative;
+  line-height: 1.6; }
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
+  color: #eee;
+  font-size: 0.9375rem;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 40.0625em) {
+    .footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
+      font-size: 0.875rem; } }
+
+.footer p, .footer li {
+  font-size: 0.75rem; }
+
+.footer a {
+  color: #eee; }
+
+.footer-logo img {
+  display: block;
+  margin-top: -20px; }
+
+.border-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 40.0625em) {
+    .border-list {
+      border-left: 1px solid #000; } }
+
+.border-list:first-child {
+  padding-top: 0; }
+
+.border-list a {
+  display: block;
+  padding: 10px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .border-list a:hover {
+    border-left-color: #24978d; }
+  @media only screen and (min-width: 40.0625em) {
+    .border-list a {
+      border-left: 1px solid #2e2e2e;
+      padding: 5px 0 5px 10px; } }
+
+.footer hr {
+  border-top-color: #000;
+  border-bottom-color: #2e2e2e;
+  margin: .5em 0; }
+
+.footer h4 {
+  color: #eee;
+  font-weight: 300;
+  text-transform: uppercase; }
+  @media only screen {
+    .footer h4 {
+      margin-top: 0; } }
+
+.footer-btn {
+  border: 3px solid #eee;
+  color: #fff;
+  display: block;
+  margin-top: 12px;
+  padding: 5px;
+  text-align: center; }
+  .footer-btn:hover {
+    background: #fff;
+    color: #333;
+    text-decoration: none; }
+
 .bg-container {
   background-image: url(../images/bg.jpg);
   background-size: cover;

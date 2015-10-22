@@ -22,6 +22,8 @@
 
     </div>
     <script src="{$ThemeDir}/build/build.js"></script>
+
+    <% include Footer %>
   </body>
 </html>
 
