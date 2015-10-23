@@ -3,7 +3,6 @@ class Category extends DataObject {
 
 	private static $db = array(
 		'Title' => 'Text',
-		
 
 	);
 
@@ -22,14 +21,14 @@ class Category extends DataObject {
 		'Pages' => 'Page',
 	);
 
-	public function updateCMSFields(FieldList $fields) {
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
 		$fields->removeByName('SortOrder');
 		$fields->removeByName('Services');
-
 		$conf = GridFieldConfig_RelationEditor::create(10);
 		$conf->addComponent(new GridFieldSortableRows('SortOrder'));
-
 		$fields->addFieldToTab('Root.Main', new GridField('Services', 'Services', $this->Services(), $conf));
-
+		return $fields;
 	}
+
 }
