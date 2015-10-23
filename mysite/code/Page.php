@@ -18,6 +18,8 @@ class Page extends SiteTree {
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
+		$fields->removeByName("Content");
+
 		$conf = GridFieldConfig_RelationEditor::create(10);
 		$conf->addComponent(new GridFieldSortableRows('SortOrder'));
 
