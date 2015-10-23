@@ -2,7 +2,7 @@
 <footer class="footer clearfix" role="contentinfo">
 	<div class="row">
 		<div class="medium-6 large-5 columns">
-			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="cfo-project/images/dosl-uiowa.png" alt="Division Of Student Life"></a><br>
+			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life"></a><br>
 			<% if $SiteConfig.GroupSummary %>
 				$SiteConfig.GroupSummary
 			<% else %>
@@ -21,9 +21,7 @@
 			<div class="row">
 				<div class="small-6 columns">
 					<ul class="border-list">
-						<% loop Menu(1) %>
-							<li><a href="$Link">$MenuTitle</a></li>
-						<% end_loop %>
+						<li><a href="http://md.studentlife.uiowa.edu/" target="_blank">M+D Website</a></li>
 					</ul>
 				</div>
 				<div class="small-6 columns">

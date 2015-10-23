@@ -1,5 +1,5 @@
 <li>
-	<h2><a href="#"> $Title &rarr;</a></h2>
+	<h2><a href="$Link" target="_blank"> $Title &rarr;</a></h2>
     $Content 
 </li>
 
