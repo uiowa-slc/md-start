@@ -6,7 +6,7 @@
     <% if $Categories %>
     <% loop $Categories %> 
       <h1>$Title</h1>
-        <ul class="large-block-grid-3">
+        <ul class="large-block-grid-3 medium-block-grid-2">
         <% loop $Services %>
           <% include ServiceCard %>
         <% end_loop %>
