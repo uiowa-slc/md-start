@@ -10,7 +10,11 @@ header{
 	.logo-container{
 		img{
 			padding: $column-gutter 0;
-			max-width: 350px;
+			max-width: 100%;
+
+			@media #{$medium-up}{
+				max-width: 350px;
+			}
 		}
 	}
 
