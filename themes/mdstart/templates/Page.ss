@@ -13,9 +13,10 @@
   <body>
 
     <div class="bg-container">
-      <% include TopBar %>
+      
 
       <div class="content-container">
+        <% include TopBar %>
         <% include Header %>
         $Layout
       </div>
