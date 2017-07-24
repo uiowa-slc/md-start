@@ -14,3 +14,6 @@ reports
 siteconfig
 node_modules
 sortablegridfield
+activedirectory/
+multivaluefield/
+queuedjobs/
