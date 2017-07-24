@@ -25,6 +25,9 @@ class Page extends SiteTree {
 
 		$fields->addFieldToTab('Root.Main', new GridField('Categories', 'Categories', $this->Categories(), $conf));
 
+		$serviceConf = GridFieldConfig_RecordEditor::create(10);
+
+		$fields->addFieldToTab('Root.Main', new GridField('Services', 'Services', Service::get(), $serviceConf));
 		return $fields;
 	}
 }
