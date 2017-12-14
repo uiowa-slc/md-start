@@ -9,7 +9,8 @@
 		"silverstripe/siteconfig": "3.6.*@stable",
 		"silverstripe-themes/simple": "*",
 		"undefinedoffset/sortablegridfield": "*",
-		"silverstripe/activedirectory" : "3.*"
+		"silverstripe/activedirectory" : "3.*",
+		"md/division-analytics":"1.*"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7"
@@ -23,7 +24,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
-
-        }
+        },
+	    {  
+	         "type":"vcs",
+	         "url":"https://github.com/StudentLifeMarketingAndDesign/division-analytics"
+	    }
     ]
 }

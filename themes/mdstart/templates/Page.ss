@@ -24,6 +24,7 @@
     </div>
 
     <% include Footer %>
+    $Analytics
   </body>
 </html>
 
