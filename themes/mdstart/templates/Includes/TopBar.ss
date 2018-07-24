@@ -3,7 +3,7 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="left">
-        <li class="active show-for-medium-up"><a href="otis" target="_blank">Launch OTIS</a></li>
+        <li class="active show-for-medium-up"><a href="otis" target="_blank">Launch ActiveCollab</a></li>
         <% loop Categories %>
           <% loop $Services %>
             <% if $Title != "OTIS" %>
