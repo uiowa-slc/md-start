@@ -1,8 +1,1 @@
-    <div class="content-container">
-      <div class="row">
-        <div class="large-12 columns content">
-            $Content
-            $Form
-        </div>
-      </div>
-    </div>
+<div class="content-container"><div class="row"><div class="large-7 large-centered columns content">$Content $Form</div></div></div>

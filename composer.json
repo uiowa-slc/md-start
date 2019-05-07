@@ -1,33 +1,59 @@
 {
-	"name": "silverstripe/installer",
-	"description": "The SilverStripe Framework Installer",
-	"require": {
-		"php": ">=5.3.3",
-		"silverstripe/cms": "3.6.*@stable",
-		"silverstripe/framework": "3.6.*@stable",
-		"silverstripe/reports": "3.6.*@stable",
-		"silverstripe/siteconfig": "3.6.*@stable",
-		"silverstripe-themes/simple": "*",
-		"undefinedoffset/sortablegridfield": "*",
-		"silverstripe/activedirectory" : "3.*",
-		"md/division-analytics":"1.*"
-	},
-	"require-dev": {
-		"phpunit/PHPUnit": "~3.7"
-	},
-	"config": {
-		"process-timeout": 600
-	},
-	"prefer-stable": true,
-	"minimum-stability": "dev",
+    "name": "silverstripe/installer",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": ">=5.5",
+        "silverstripe/framework": "4.3.*@stable",
+        "silverstripe/cms": "4.3.*@stable",
+        "silverstripe/recipe-plugin": "*",
+        "silverstripe/recipe-cms": "*",
+        "silverstripe/reports": "*",
+        "silverstripe/siteconfig": "*",
+        "silverstripe-themes/simple": "*",
+        "md/saml": "dev-md",
+        "md/division-analytics": "1.*",
+        "md/uiowa-bar": "*",
+        "undefinedoffset/sortablegridfield": "*"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "extra": {
+        "expose": [
+            "themes/mdstart/dist"
+        ],
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
+            "web.config"
+        ]
+    },
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
         },
-	    {  
-	         "type":"vcs",
-	         "url":"https://github.com/StudentLifeMarketingAndDesign/division-analytics"
-	    }
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
+        }
     ]
 }

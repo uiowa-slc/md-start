@@ -1,0 +1,72 @@
+@import "settings";
+@import
+  // "foundation/foundation/components/accordion",
+  // "foundation/foundation/components/alert-boxes",
+  "foundation/foundation/components/block-grid",
+  // "foundation/foundation/components/breadcrumbs",
+  // "foundation/foundation/components/button-groups",
+  "foundation/foundation/components/buttons",
+  // "foundation/foundation/components/clearing",
+  // "foundation/foundation/components/dropdown",
+  // "foundation/foundation/components/dropdown-buttons",
+  // "foundation/foundation/components/flex-video",
+  // "foundation/foundation/components/forms",
+  "foundation/foundation/components/grid",
+  // "foundation/foundation/components/inline-lists",
+  // "foundation/foundation/components/joyride",
+  // "foundation/foundation/components/keystrokes",
+  // "foundation/foundation/components/labels",
+  // "foundation/foundation/components/magellan",
+  // "foundation/foundation/components/orbit",
+  // "foundation/foundation/components/pagination",
+  // "foundation/foundation/components/panels",
+  // "foundation/foundation/components/pricing-tables",
+  // "foundation/foundation/components/progress-bars",
+  // "foundation/foundation/components/reveal",
+  // "foundation/foundation/components/side-nav",
+  // "foundation/foundation/components/split-buttons",
+  // "foundation/foundation/components/sub-nav",
+  // "foundation/foundation/components/switches",
+  // "foundation/foundation/components/tables",
+  // "foundation/foundation/components/tabs",
+  // "foundation/foundation/components/thumbs",
+  // "foundation/foundation/components/tooltips",
+  "foundation/foundation/components/top-bar",
+  "foundation/foundation/components/type",
+  // "foundation/foundation/components/offcanvas",
+  "foundation/foundation/components/visibility";
+@import "layout/header";
+@import "layout/footer/footer";
+
+.bg-container{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.top-bar{
+	background: none;
+}
+.top-bar-section ul li {
+	background: none;
+}
+.content-container{
+	background: rgba(42, 42, 42, 0.65);
+	//padding-top: $column-gutter;
+
+	section{
+		padding-bottom: $column-gutter;
+		h1{
+			border-bottom: 2px solid white;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
+ul ul{
+	list-style-type: square;
+}
+
+
+
+

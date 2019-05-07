@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\ORM\DataObject;
 class Category extends DataObject {
 
 	private static $db = array(

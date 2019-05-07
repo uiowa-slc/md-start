@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Forms\FieldList;
+use SilverStripe\ORM\DataObject;
 class Service extends DataObject {
 
 	private static $db = array(

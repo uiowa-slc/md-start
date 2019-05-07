@@ -88,7 +88,9 @@ form .message {
         background-color: #ecf9d0;
         border-color: #8fbe00;
     }
-    form .bad, form .required {
+    form .bad,
+    form .required,
+    form .error {
         background-color: #f9d0d0;
         border-color: #cf0000;
         color: #b80000;
@@ -99,7 +101,7 @@ form .message {
 .Actions {
     margin-bottom: 20px;
 }
-    a.btn, button, input[type="submit"], .Actions .action {
+    a.btn, button, input[type="submit"], input[type="reset"], .Actions .action {
         background: #b80000;
         color: #fff;
         display: inline-block;
@@ -196,7 +198,7 @@ form .date .middleColumn input {
     font-size: 13px;                            /* reset to default */
     color: #333;                                /* reset to default */
 }
-form .requiredField label.left:after { /* pseudo element adds an asterisk to a required fields label */
+form .requiredField label.left:after, form .requiredField legend.left:after { /* pseudo element adds an asterisk to a required fields label */
     color: #B94A48;
     content: "*";
     font-size: 14px;
@@ -244,8 +246,6 @@ form input.holder-required {        /* This class needs to be changed - is used 
 input:invalid,
 textarea:invalid {
     border-radius: 1px;
-    -moz-box-shadow: 0px 0px 5px red;
-    -webkit-box-shadow: 0px 0px 5px red;
     box-shadow: 0px 0px 5px red;
 }
 .no-boxshadow input:invalid,
