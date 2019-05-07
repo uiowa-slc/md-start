@@ -67,6 +67,14 @@ ul ul{
 	list-style-type: square;
 }
 
+#SAMLLoginForm_LoginForm_action_dologin{
+  @extend .button;
+}
 
+fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 
