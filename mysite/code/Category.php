@@ -1,5 +1,5 @@
 <?php
-
+use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\ORM\DataObject;
@@ -30,7 +30,7 @@ class Category extends DataObject {
 		$fields->removeByName('SortOrder');
 		$fields->removeByName('Services');
 		$conf = GridFieldConfig_RelationEditor::create(10);
-		$conf->addComponent(new GridFieldSortableRows('SortOrder'));
+		$conf->addComponent($sortable = new GridFieldSortableRows('SortOrder'));
 		$fields->addFieldToTab('Root.Main', new GridField('Services', 'Services', $this->Services(), $conf));
 		return $fields;
 	}
