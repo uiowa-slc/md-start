@@ -3,8 +3,8 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": ">=5.5",
-        "silverstripe/framework": "4.4.*@stable",
-        "silverstripe/cms": "4.4.*@stable",
+        "silverstripe/framework": "4.5.*@stable",
+        "silverstripe/cms": "4.5.*@stable",
         "silverstripe/recipe-plugin": "*",
         "silverstripe/recipe-cms": "*",
         "silverstripe/reports": "*",
@@ -13,7 +13,7 @@
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
-	"md/deploy-helper": "*",
+        "md/deploy-helper": "*",
         "undefinedoffset/sortablegridfield": "*"
     },
     "config": {
