@@ -36,4 +36,8 @@ class Page extends SiteTree {
 		$fields->addFieldToTab('Root.Main', new GridField('Services', 'Services', Service::get(), $serviceConf));
 		return $fields;
 	}
+
+	public function Categories(){
+		return $this->getManyManyComponents('Categories')->sort('SortOrder');
+	}	
 }

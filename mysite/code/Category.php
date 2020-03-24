@@ -34,5 +34,8 @@ class Category extends DataObject {
 		$fields->addFieldToTab('Root.Main', new GridField('Services', 'Services', $this->Services(), $conf));
 		return $fields;
 	}
-
+	public function Services()
+	{
+		return $this->getManyManyComponents('Services')->sort('SortOrder');
+	}
 }
